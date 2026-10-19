@@ -15,6 +15,34 @@
 
 ---
 
+## 🏗️ Architecture & System Design
+
+CommunityFlow Chicago is structured as a decoupled full-stack application optimized for low-latency spatial data retrieval and resilient AI generation.
+
+```text
+ ┌──────────────────────┐         HTTP / REST         ┌────────────────────────┐
+ │                      │ ──────────────────────────> │                        │
+ │    React + Vite      │                             │     FastAPI Backend    │
+ │   Frontend (UI/Map)  │ <────────────────────────── │  (Endpoints & Routers) │
+ │                      │         JSON Data           │                        │
+ └──────────────────────┘                             └───────────┬────────────┘
+            │                                                     │
+            │ (Client Caching)                                    │ (SQLAlchemy ORM)
+            ▼                                                     ▼
+   [summaryCache / chatCache]                             ┌────────────────────────┐
+                                                          │   PostgreSQL Database  │
+                                                          │  (Spatial & Civic Data)│
+                                                          └────────────────────────>
+                                                                  │
+                                                                  │ (LLM Fallbacks)
+                                                                  ▼
+                                                          ┌────────────────────────┐
+                                                          │   Google Gemini API    │
+                                                          │  (gemini-3.8-flash)    │
+                                                          └────────────────────────┘
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Backend**: FastAPI, Python, SQLAlchemy, PostgreSQL (Spatial Data)
