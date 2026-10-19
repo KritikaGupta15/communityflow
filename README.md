@@ -42,6 +42,8 @@ CommunityFlow Chicago is structured as a decoupled full-stack application optimi
                                                           └────────────────────────>
 
 
+```
+
 ---
 
 ## 🛠️ Tech Stack
