@@ -15,6 +15,35 @@
 
 ---
 
+## Project Structure
+
+```
+communityflow/
+│
+├── backend/
+│   ├── api/
+│   │   ├── neighborhoods.py      # Neighborhood summaries & metrics
+│   │   └── natural_language.py   # AI conversational Q&A endpoint & fallbacks
+│   ├── database.py               # SQLAlchemy database session setup
+│   ├── models.py                 # Database schema models (Neighborhood, etc.)
+│   ├── llm.py                    # Google Gemini configuration & retry logic
+│   ├── main.py                   # FastAPI app entry point & CORS configuration
+│   └── requirements.txt          # Python dependencies
+│
+├── frontend/
+│   ├── src/
+│   │   ├── App.jsx               # Main React dashboard, state, map, & cache logic
+│   │   ├── main.jsx              # React DOM mounting
+│   │   └── index.css             # Global layout & styling
+│   ├── package.json              # Node.js dependencies & scripts
+│   └── vite.config.js            # Vite bundler configuration
+│
+└── README.md
+
+```
+
+---
+
 ## 🏗️ Architecture & System Design
 
 CommunityFlow Chicago is structured as a decoupled full-stack application optimized for low-latency spatial data retrieval and resilient AI generation.
