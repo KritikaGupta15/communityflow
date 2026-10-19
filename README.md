@@ -43,6 +43,7 @@ CommunityFlow Chicago is structured as a decoupled full-stack application optimi
 
 ---
 
+
 ## 🛠️ Tech Stack
 
 - **Backend**: FastAPI, Python, SQLAlchemy, PostgreSQL (Spatial Data)
