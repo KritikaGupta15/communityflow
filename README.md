@@ -41,7 +41,7 @@ CommunityFlow Chicago is structured as a decoupled full-stack application optimi
                                                           │  (gemini-3.8-flash)    │
                                                           └────────────────────────┘
 
----
+'''
 
 
 ## 🛠️ Tech Stack
@@ -64,3 +64,7 @@ CommunityFlow Chicago is structured as a decoupled full-stack application optimi
 ```bash
 git clone [https://github.com/KritikaGupta15/communityflow.git](https://github.com/KritikaGupta15/communityflow.git)
 cd communityflow
+
+
+
+
