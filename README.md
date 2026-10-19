@@ -39,10 +39,10 @@ CommunityFlow Chicago is structured as a decoupled full-stack application optimi
                                                           ┌────────────────────────┐
                                                           │   Google Gemini API    │
                                                           │  (gemini-3.8-flash)    │
-                                                          └────────────────────────┘
+                                                          └────────────────────────>
 
-'''
 
+---
 
 ## 🛠️ Tech Stack
 
